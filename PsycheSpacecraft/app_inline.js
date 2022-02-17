@@ -11,17 +11,17 @@ var glbFilePath = '../assets/PsycheToScale.glb';
 // Change these to your model's animation keyframes
 var stops = [60/24, 115/24, 160/24];
 // these are the titles of your modal panels, in order.
-var titles = ["THE SPACECRAFT", "MULTISPECTRAL IMAGER", "MAGNETOMETER", "SPECTOMETER", "X-BAND TELECOMMUNICATIONS", "DSOC", "PROPULSION SYSTEM"];
+var titles = ["THE SPACECRAFT", "MULTISPECTRAL IMAGER", "MAGNETOMETER"/*, "SPECTOMETER", "X-BAND TELECOMMUNICATIONS", "DSOC", "PROPULSION SYSTEM"*/];
 // descriptions of modal panels in order
 var descriptions =
   [
     "The Psyche spacecraft is built by Maxar technologies, and will contain various scientific instruments to help in its mission.",
     "The bus or \"body\" of the spacecraft is slightly bigger than a Smart Car and about as tall as a regulation basketball hoop.",
-    "The Psyche spacecraft (including the solar panels) is about the size of a singles tennis court.",
+    "The Psyche spacecraft (including the solar panels) is about the size of a singles tennis court."/*,
     "The bus or \"body\" of the spacecraft is slightly bigger than a Smart Car and about as tall as a regulation basketball hoop.",
     "The Psyche spacecraft (including the solar panels) is about the size of a singles tennis court.",
     "The bus or \"body\" of the spacecraft is slightly bigger than a Smart Car and about as tall as a regulation basketball hoop.",
-    "The Psyche spacecraft (including the solar panels) is about the size of a singles tennis court."
+    "The Psyche spacecraft (including the solar panels) is about the size of a singles tennis court."*/
   ];
 // set this to the entire length of your animation
 var animationLength = 160/24;
