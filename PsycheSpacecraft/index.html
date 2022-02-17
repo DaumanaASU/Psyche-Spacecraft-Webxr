@@ -1,0 +1,117 @@
+<!doctype html>
+<!--
+/*
+ * Copyright 2017 Google Inc. All Rights Reserved.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psyche To Scale</title>
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+    <!-- three.js -->
+    <script src="https://unpkg.com/three@0.126.0/build/three.js"></script>
+    <script src="https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../shared/app.css" />
+    <script src="utils.js"></script>
+
+
+  </head>
+  <body>
+    <header style="padding: 16px 0px;">
+      <div class="container d-flex align-items-center">
+          <div class="logo">
+              <a target="_blank" href="https://www.nasa.gov/" rel="noopener" style="text-decoration: none;">
+                  <img src="https://psyche.asu.edu/wp-content/themes/psyche/static/img/nasa.svg" alt="NASA" style="height: 57px">
+              </a>
+              <span class="divider" style="left:auto;"></span>
+              <a href="https://psyche.asu.edu/">
+                  <img src="https://psyche.asu.edu/wp-content/themes/psyche/static/img/psyche.svg" alt="Psyche" style="height: 57px">
+              </a>
+          </div>
+        </a>
+      </div>
+    </header>
+
+      <div class="asteroid-wrap">
+        <div class="container">
+          <img class="asteroid" src="https://psyche.asu.edu/wp-content/themes/psyche/static/img/hero-home-bg.png" alt="Psyche Asteroid" style="transform: matrix(1,0,0,1,0,-19); opacity: 1;">
+        </div>
+      </div>
+
+      <div style="height:20%;">
+
+      </div>
+      <!-- Start page when WebXR is supported -->
+      <div id="enter-ar-info">
+        <div id="experienceInfo">
+          <h1>Psyche Spacecraft</h1>
+          <p>
+            Learn about the Psyche Spacecraft and the instruments it contains!
+          </p>
+          <a class="link" id="enter-ar">
+            <div>Start Experience</div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Start page when WebXR is not supported -->
+      <div id="unsupported-info">
+        <div id="experienceInfo">
+          <h1>Psyche Spacecraft</h1>
+          <p>
+            Learn about the Psyche Spacecraft and the instruments it contains!
+          </p>
+          <!-- links to the inline document, where the base three.js experience is found. -->
+          <a class="link" href="inline.html">
+            <div>Start Experience</div>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <img id="orbit" src="..\assets\orbit.jpg" style="width: 90%; margin: 15% 5% 5% 5%">
+      </div>
+
+    <!-- UI for the WebXR experience -->
+    <div id="stabilization"></div>
+    <div id="help">
+      <h2>Tap anywhere to continue.</h2>
+    </div>
+    <div id="recenter">
+      <h2>RECENTER</h2>
+    </div>
+    <div id="modal2" class="modal2" style="display:none">
+      <div class="modal_content">
+        <h1 id="modalTitle">THE SPACECRAFT</h1>
+        <p id="modalDescription">The Psyche spacecraft is built by Maxar technologies, and will contain various scientific instruments to help in its mission.</p>
+        <div style="width:100%;">
+          <a class="link" id="ViewButton">
+            <div>View</div>
+
+          </a>
+          <a class="link" id="NextButton">
+            <div>Next</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
