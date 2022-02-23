@@ -14,9 +14,9 @@
 
 
 // Change this to your experience's glb file
-var glbFilePath = '../assets/PsycheToScale.glb';
+var glbFilePath = '../assets/spacecraft.glb';
 // Change these to your model's animation keyframes
-var stops = [60/24, 115/24, 160/24];
+var stops = [30/30, 60/30, 90/30, 120/30, 150/30, 180/30, 210/30];
 // these are the titles of your modal panels, in order.
 var titles = ["THE SPACECRAFT", "MULTISPECTRAL IMAGER", "MAGNETOMETER", "SPECTOMETER", "X-BAND TELECOMMUNICATIONS", "DSOC", "PROPULSION SYSTEM"];
 // descriptions of modal panels in order
@@ -31,7 +31,7 @@ var descriptions =
     "The Psyche spacecraft will be utilize solar energy gathered by its panels to power four SPT-140 engines which use electricity to convert xenon gas into xenon ions in order to create thrust."
   ];
 // set this to the entire length of your animation
-var animationLength = 160/24;
+var animationLength = 210/30;
 
 var modalStatus = 0;
 var modalClicked = 0;
