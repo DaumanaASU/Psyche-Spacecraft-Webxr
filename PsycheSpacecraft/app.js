@@ -23,8 +23,8 @@ var titles = ["THE SPACECRAFT", "MULTISPECTRAL IMAGER", "MAGNETOMETER", "SPECTRO
 var descriptions =
   [
     "The Psyche spacecraft is built by Maxar technologies, and will contain various scientific instruments to help in its mission.",
-    "The bus or \"body\" of the spacecraft is slightly bigger than a Smart Car and about as tall as a regulation basketball hoop.",
-    "The Psyche spacecraft (including the solar panels) is about the size of a singles tennis court.",
+    "The Multispectral imager uses high resolution images together with filters to differentiate between metals and silicates that form the asteroid.",
+    "The Magnetometer in the spacecraft will measure the remaining magnetic field on the asteroid to find more about its history and composition.",
     "The Gamma Ray and Neutron Spectrometer will be used to find the chemical elements in the surface of the asteroid, which can be used to learn about its formation.",
     "The X-Band radio telecommunication system will measure the gravitational field, which will give scientists an idea of the internal structure of the asteroid.",
     "The Deep Space Optical Communication (DSOC) is a new technology being tested on this mission which should allow information to be transmitted via light particles in the form of a laser sent from the spacecraft to a telescope located in California.",
