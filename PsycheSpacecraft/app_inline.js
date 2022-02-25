@@ -11,14 +11,14 @@ var glbFilePath = '../assets/spacecraft.glb';
 // Change these to your model's animation keyframes
 var stops = [30/30, 60/30, 90/30, 120/30, 150/30, 180/30, 210/30];
 // these are the titles of your modal panels, in order.
-var titles = ["THE SPACECRAFT", "MULTISPECTRAL IMAGER", "MAGNETOMETER", "SPECTOMETER", "X-BAND TELECOMMUNICATIONS", "DSOC", "PROPULSION SYSTEM"];
+var titles = ["THE SPACECRAFT", "MULTISPECTRAL IMAGER", "MAGNETOMETER", "SPECTROMETER", "X-BAND TELECOMMUNICATIONS", "DSOC", "PROPULSION SYSTEM"];
 // descriptions of modal panels in order
 var descriptions =
   [
     "The Psyche spacecraft is built by Maxar technologies, and will contain various scientific instruments to help in its mission.",
     "The Multispectral imager uses high resolution images together with filters to differentiate between metals and silicates that form the asteroid.",
     "The Magnetometer in the spacecraft will measure the remaining magnetic field on the asteroid to find more about its history and composition.",
-    "The Gamma Ray and Neutron Spectometer will be used to find the chemical elements in the surface of the asteroid, which can be used to learn about its formation.",
+    "The Gamma Ray and Neutron Spectrometer will be used to find the chemical elements in the surface of the asteroid, which can be used to learn about its formation.",
     "The X-Band radio telecommunication system will measure the gravitational field, which will give scientists an idea of the internal structure of the asteroid.",
     "The Deep Space Optical Communication (DSOC) is a new technology being tested on this mission which should allow information to be transmitted via light particles in the form of a laser sent from the spacecraft to a telescope located in California.",
     "The Psyche spacecraft will be utilize solar energy gathered by its panels to power four SPT-140 engines which use electricity to convert xenon gas into xenon ions in order to create thrust."
