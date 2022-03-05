@@ -24,7 +24,7 @@ window.gltfLoader.load("https://immersive-web.github.io/webxr-samples/media/gltf
 });
 
 window.gltfLoader.setPath( '../assets/');
-window.gltfLoader.load( 'PsycheToScale.glb', function (gltf){
+window.gltfLoader.load( 'spacecraft.glb', function (gltf){
 
   gltf.scene.traverse( function ( child ) {
 
@@ -36,13 +36,13 @@ window.gltfLoader.load( 'PsycheToScale.glb', function (gltf){
 
       animationTime = 0;
       nextTimeStop = 20/24;
-      
+
 
       mixer = new THREE.AnimationMixer(gltf.scene);
       mixer.clipAction(gltf.animations[0]).play();
       mixer.timeScale = 0;
       animate();
-      
+
     }
 
   } );
@@ -74,7 +74,7 @@ function animate() {
 
   if(animationTime > nextTimeStop){
     mixer.timeScale = 0;
-    
+
   }
 
 }
@@ -161,9 +161,9 @@ window.DemoUtils = {
   },
   stopAnimation(){
     mixer.timeScale = 0
-    
+
   },
-  
+
   resumeAnimation(){
     console.log("Resuming animation");
     console.log("Animation Time: "+animationTime + " Next Stop: "+nextTimeStop + " Total Length: "+animationLength);
@@ -188,5 +188,5 @@ window.DemoUtils = {
 function onNoXRDevice() {
   console.log("No xr device");
   document.body.classList.add('unsupported');
-  
+
 }
