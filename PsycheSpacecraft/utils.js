@@ -35,7 +35,7 @@ window.gltfLoader.load( 'spacecraft.glb', function (gltf){
       window.rover = gltf.scene;
 
       animationTime = 0;
-      nextTimeStop = 20/24;
+      nextTimeStop = 30/30;
 
 
       mixer = new THREE.AnimationMixer(gltf.scene);
