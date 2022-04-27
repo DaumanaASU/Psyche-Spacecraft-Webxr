@@ -47,8 +47,10 @@ container.onclick = function(){
   if(modalStatus == 1){
     console.log("modal present, but not clicked");
     // simulate view button press
-    helpDiv.classList.remove('fade-out');
-    helpDiv.classList.add('fade-in');
+    if(helpDiv){
+      helpDiv.classList.remove('fade-out');
+      helpDiv.classList.add('fade-in');
+    }
     closeModal();
     return;
   }
@@ -56,8 +58,11 @@ container.onclick = function(){
 
   if(modalStatus == 0 && mixer.timeScale == 0){
     console.log(modalStatus);
-    helpDiv.classList.remove('fade-in');
-    helpDiv.classList.add('fade-out');
+    if(helpDiv){
+      helpDiv.classList.remove('fade-in');
+      helpDiv.classList.add('fade-out');
+    }
+    
     openModal();
 
     console.log(modalStatus);
@@ -74,8 +79,11 @@ modalDescription.innerHTML = descriptions[0];
 const viewButton = document.getElementById("ViewButton");
 viewButton.onclick = function(){
   console.log("View");
-  helpDiv.classList.remove('fade-out');
-  helpDiv.classList.add('fade-in');
+  if(helpDiv){
+    helpDiv.classList.remove('fade-out');
+    helpDiv.classList.add('fade-in');
+  }
+  
   closeModal();
 };
 const nextButton = document.getElementById("NextButton");
