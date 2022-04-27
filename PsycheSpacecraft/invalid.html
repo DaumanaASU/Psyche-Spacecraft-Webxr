@@ -30,7 +30,7 @@
     <link rel="stylesheet" type="text/css" href="../shared/app.css" />
     <script src="utils.js"></script>
 
-
+    
   </head>
   <body>
     <header style="padding: 16px 0px;">
@@ -55,71 +55,32 @@
       </div>
 
       <div style="height:20%;">
-
+        
       </div>
       <!-- Start page when WebXR is supported -->
       <div id="enter-ar-info">
         <div id="experienceInfo">
-          <h1>Psyche Spacecraft</h1>
+          <h1>Unsupported Browser</h1>
           <p>
-            Learn about the Psyche Spacecraft and the instruments it contains!
+            We're sorry, this experience is unsupported on your browser. Reopen in Chrome or Firefox to play!
           </p>
-          <a class="link" id="enter-ar">
-            <div>Start Experience</div>
-          </a>
         </div>
       </div>
 
       <!-- Start page when WebXR is not supported -->
       <div id="unsupported-info">
         <div id="experienceInfo">
-          <h1>Psyche Spacecraft</h1>
+          <h1>Unsupported Browser</h1>
           <p>
-            Learn about the Psyche Spacecraft and the instruments it contains!
+            We're sorry, this experience is unsupported on your browser. Reopen in Chrome or Firefox to play!
           </p>
           <!-- links to the inline document, where the base three.js experience is found. -->
-          <a class="link" href="inline.html">
-            <div>Start Experience</div>
-          </a>
+
         </div>
       </div>
 
       <div>
         <img id="orbit" src="..\assets\orbit.jpg" style="width: 90%; margin: 15% 5% 5% 5%">
       </div>
-
-
-        <button type="button" class="collapsible">Disclaimer</button>
-        <div class="ccontent">
-          <p>This work was created in partial fulfillment of Arizona State University Capstone Course “CSE424″. The work is a result of the Psyche Student Collaborations component of NASA’s Psyche Mission (https://psyche.asu.edu). “Psyche: A Journey to a Metal World” [Contract number NNM16AA09C] is part of the NASA Discovery Program mission to solar system targets. Trade names and trademarks of ASU and NASA are used in this work for identification only. Their usage does not constitute an official endorsement, either expressed or implied, by Arizona State University or National Aeronautics and Space Administration. The content is solely the responsibility of the authors and does not necessarily represent the official views of ASU or NASA.
-          </p>
-        </div>
-
-
-    <!-- UI for the WebXR experience -->
-    <div id="stabilization"></div>
-    <div id="help">
-      <h2>Tap anywhere to continue.</h2>
-    </div>
-    <div id="recenter">
-      <h2>RECENTER</h2>
-    </div>
-    <div id="modal2" class="modal2" style="display:none">
-      <div class="modal_content">
-        <h1 id="modalTitle">THE SPACECRAFT</h1>
-        <p id="modalDescription">The Psyche spacecraft is built by Maxar technologies, and will contain various scientific instruments to help in its mission.</p>
-        <div style="width:100%;">
-          <a class="link" id="ViewButton">
-            <div>View</div>
-
-          </a>
-          <a class="link" id="NextButton">
-            <div>Next</div>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <script src="app.js"></script>
   </body>
 </html>

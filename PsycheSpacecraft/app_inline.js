@@ -6,6 +6,8 @@ import { RoomEnvironment } from '../jsm/environments/RoomEnvironment.js';
 import { GLTFLoader } from '../jsm/loaders/GLTFLoader.js';
 import { DRACOLoader } from '../jsm/loaders/DRACOLoader.js';
 
+var animationTime = null;
+
 // Change this to your experience's glb file
 var glbFilePath = '../assets/spacecraft.glb';
 // Change these to your model's animation keyframes

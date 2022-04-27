@@ -1,3 +1,5 @@
+// Adapted from Google's WebXR tutorial: https://codelabs.developers.google.com/ar-with-webxr#0
+
 /**
  * Query for WebXR support. If there's no support for the `immersive-ar` mode,
  * show an error.
@@ -10,7 +12,25 @@
     onNoXRDevice();
   }
 })();
+let userAgentString = 
+                navigator.userAgent;
+// Detect Firefox
+let firefoxAgent = userAgentString.indexOf("Firefox") > -1;
+let chromeAgent = userAgentString.indexOf("Chrome") > -1;
+// Detect Safari
+let safariAgent = userAgentString.indexOf("Safari") > -1;
 
+// Discard Safari since it also matches Chrome
+if ((chromeAgent) && (safariAgent)) safariAgent = false;
+
+console.log(firefoxAgent);
+console.log(chromeAgent);
+console.log(safariAgent);
+
+if(!(firefoxAgent || chromeAgent)){
+  console.log("invalid browser");
+  window.location.replace("./invalid.html");
+}
 
 
 // Change this to your experience's glb file
@@ -37,6 +57,22 @@ var modalStatus = 0;
 var modalClicked = 0;
 DemoUtils.setAnimationLength(animationLength);
 var animationIndex = 0;
+
+// disclaimer
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+} 
 
 const helpDiv = document.getElementById('help');
 
