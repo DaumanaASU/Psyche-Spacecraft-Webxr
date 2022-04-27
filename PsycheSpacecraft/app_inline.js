@@ -124,11 +124,11 @@ nextButton.onclick = function(){
 
     }
   }
-
+  
   var modalTime = endTime - beginningTime;
   console.log(modalTime+ " = "+endTime+" - "+beginningTime);
   setTimeout(function() { openModal(); }, modalTime * 1000);
-
+  
   modalStatus = 0;
   modalStatus = -1;
   modalClicked = 1;
@@ -278,7 +278,7 @@ function animate() {
 
   if(animationTime > nextTimeStop){
     mixer.timeScale = 0;
-
+    
   }
 
   renderer.render( scene, camera );
@@ -287,7 +287,7 @@ function animate() {
 
 function stopAnimation(){
   mixer.timeScale = 0
-
+  
 }
 
 function resumeAnimation(){
