@@ -86,6 +86,7 @@ viewButton.onclick = function(){
   
   closeModal();
 };
+
 const nextButton = document.getElementById("NextButton");
 nextButton.onclick = function(){
   console.log("Next");
