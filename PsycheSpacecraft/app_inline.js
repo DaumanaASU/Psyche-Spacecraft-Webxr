@@ -167,7 +167,7 @@ const clock = new THREE.Clock();
 
 const loadingManager = new THREE.LoadingManager( () => {
   const loadingScreen = document.getElementById('loading-screen');
-  loadingScreen.classList.remove('fade-out');
+  loadingScreen.classList.add('fade-out');
   loadingScreen.addEventListener('webkitTransitionEnd',onTransitionEnd);
   loadingScreen.addEventListener('transitionend',onTransitionEnd);
 });
